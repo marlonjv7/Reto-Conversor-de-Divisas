@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Convensor de Divisas</title>
+</head>
+
+<body>
+    <hr>
+    <main>
+        <div class="fondo" id="form">
+            <img src="./images/logo.jpg" alt="">
+            <form>
+                <input type="text" name="cantdinero" placeholder="Cantidad de Dinero:" id="CantConver">
+            </form>
+        </div>
+
+        <div class="convertidor" id="form">
+            <form>
+                <label for="text" class="conver-1">De:</label>
+                <select name="TmonedasD" id="De" placeholder="Elige tu Moneda" class="conver">
+                    <option value="0"></option>
+                    <option value="1">Dolar</option>
+                    <option value="2">Peso Mexicano</option>
+                    <option value="3">Peso Colombiano</option>
+                    <option value="4">Euro</option>
+                    <option value="5">Libra Esterlina</option>
+                </select>
+                <label for="text">A:</label>
+                <select name="TmonedasA" id="A" placeholder="Elige tu Moneda" class="conver">
+                    <option value="0" placeholder="Elige tu Moneda"></option>
+                    <option value="1">Dolar</option>
+                    <option value="2">Peso Mexicano</option>
+                    <option value="3">Peso Colombiano</option>
+                    <option value="4">Euro</option>
+                    <option value="5">Libra Esterlina</option>
+                </select>
+                <button id="butt" class="conver conver-2">Enviar</button>
+            </form>
+        </div><br>
+        <div id="Result"></div>
+    </main>
+    <hr>
+    <script src="./scripts/script.js" type="module"></script>
+    <script src="./data/data.js" type="module"></script>
+</body>
+
+</html>
